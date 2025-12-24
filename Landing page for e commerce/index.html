@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSphere | Electronics E-Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assest\css\style.css">
+    <link rel="stylesheet" href="assest\css\responsive.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <i class="fas fa-microchip"></i>
+                    E<span>Life</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#specs">Tech Specs</a></li>
+                    <li><a href="#contact">Support</a></li>
+                </ul>
+                
+                <div class="nav-icons">
+                    <a href="#" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" id="user-btn">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">3</span>
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Next-Gen <span>Electronics</span> for the Future</h1>
+                    <p>Discover cutting-edge gadgets, smart devices, and premium electronics with the latest technology. Free shipping on orders over $99.</p>
+                    <div class="hero-btns">
+                        <a href="#products" class="btn">Shop Now</a>
+                        <a href="#specs" class="btn btn-outline">Explore Tech</a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-value">10K+</div>
+                            <div class="stat-label">Products</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">24/7</div>
+                            <div class="stat-label">Support</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">2-Day</div>
+                            <div class="stat-label">Delivery</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assest\image\all_1.png" alt="Latest Electronics">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Electronics</h2>
+                <p>Top-rated gadgets with cutting-edge technology</p>
+            </div>
+            
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Shop By Category</h2>
+                <p>Find exactly what you're looking for</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Smartphones" class="category-img">
+                    <div class="category-overlay">
+                        <div class="category-content">
+                            <h3>Smartphones</h3>
+                            <div class="category-count">12 Products</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Laptops" class="category-img">
+                    <div class="category-overlay">
+                        <div class="category-content">
+                            <h3>Laptops</h3>
+                            <div class="category-count">12 Products</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Audio" class="category-img">
+                    <div class="category-overlay">
+                        <div class="category-content">
+                            <h3>Audio</h3>
+                            <div class="category-count">12 Products</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Smart Home" class="category-img">
+                    <div class="category-overlay">
+                        <div class="category-content">
+                            <h3>Smart Home</h3>
+                            <div class="category-count">12 Products</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Specs -->
+    <section class="tech-specs" id="specs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Advanced Technology</h2>
+                <p>Experience the latest innovations</p>
+            </div>
+            
+            <div class="specs-container">
+                <div class="specs-image">
+                    <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Advanced Technology">
+                </div>
+                
+                <div class="specs-list">
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="spec-content">
+                            <h4>Fast Charging</h4>
+                            <p>Charge your devices up to 70% in just 30 minutes with our advanced fast-charging technology.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="spec-content">
+                            <h4>5G Connectivity</h4>
+                            <p>Experience blazing-fast internet speeds with our 5G-enabled devices for seamless connectivity.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="spec-content">
+                            <h4>AI Processing</h4>
+                            <p>Our devices feature advanced AI processors for smarter performance and enhanced user experience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="spec-content">
+                            <h4>Advanced Security</h4>
+                            <p>Biometric authentication and encrypted data protection keep your information safe and secure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated with Tech</h2>
+            <p>Subscribe to our newsletter for the latest tech news, product releases, and exclusive deals.</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>TechSphere</h3>
+                    <p>Your premier destination for cutting-edge electronics and tech gadgets. We bring the future to your doorstep.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="#categories"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="#specs"><i class="fas fa-chevron-right"></i> Tech Specs</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Customer Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-phone"></i> +1 (555) 123-4567</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> support@eLife.com</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> Help Center</a></li>
+                        <li><a href="#"><i class="fas fa-shipping-fast"></i> Shipping Info</a></li>
+                        <li><a href="#"><i class="fas fa-exchange-alt"></i> Returns & Warranty</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Payment Methods</h3>
+                    <p>We accept all major payment methods for your convenience.</p>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 TechSphere. All Rights Reserved. | Designed for Electronics E-Commerce</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-header">
+            <h3>Your Cart (3)</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        
+        <div class="cart-items">
+            <!-- Cart items will be loaded via JavaScript -->
+        </div>
+        
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-price">$1,249.97</span>
+        </div>
+        
+        <div class="cart-actions">
+            <a href="#" class="btn">View Cart</a>
+            <a href="#" class="btn btn-secondary">Checkout</a>
+        </div>
+    </div>
+    
+    <!-- Overlay for cart modal -->
+    <div class="overlay" id="overlay"></div>
+
+    <script>
+        // Sample electronics product data
+        const products = [
+            {
+                id: 1,
+                name: "Quantum X Pro Smartphone",
+                price: 899.99,
+                originalPrice: 1099.99,
+                image: "assest/image/headphone.png",
+                rating: 4.8,
+                reviews: 342,
+                description: "6.8-inch AMOLED, 5G, 256GB storage, 48MP triple camera",
+                badge: "New"
+            },
+            {
+                id: 2,
+                name: "Nebula Pro Gaming Laptop",
+                price: 1499.99,
+                originalPrice: 1799.99,
+                image: "assest/image/ipad.png",
+                rating: 4.9,
+                reviews: 187,
+                description: "RTX 4070, Intel i9, 32GB RAM, 1TB SSD, 240Hz display",
+                badge: "Hot"
+            },
+            {
+                id: 3,
+                name: "Zenith Noise-Canceling Headphones",
+                price: 299.99,
+                originalPrice: 399.99,
+                image: "assest/image/laptop.png",
+                rating: 4.7,
+                reviews: 89,
+                description: "Active noise cancellation, 30hr battery, premium sound",
+                badge: "Sale"
+            },
+            {
+                id: 4,
+                name: "Aurora Smart Watch Series 7",
+                price: 349.99,
+                originalPrice: 449.99,
+                image: "assest/image/phone.png",
+                rating: 4.6,
+                reviews: 156,
+                description: "Health tracking, LTE, ECG, always-on display, waterproof",
+                badge: "New"
+            },
+            {
+                id: 5,
+                name: "PixelBook Pro 14\"",
+                price: 1199.99,
+                originalPrice: 1399.99,
+                image: "assest/image/watch-1.png",
+                rating: 4.5,
+                reviews: 203,
+                description: "2.8K OLED touchscreen, 16GB RAM, 512GB SSD, 12hr battery",
+                badge: "Sale"
+            },
+            {
+                id: 6,
+                name: "Quantum Sound Bluetooth Speaker",
+                price: 199.99,
+                originalPrice: 249.99,
+                image: "https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+                rating: 4.4,
+                reviews: 78,
+                description: "360° sound, waterproof, 24hr battery, party pairing mode",
+                badge: null
+            }
+        ];
+
+        // Sample cart items
+        const cartItems = [
+            {
+                id: 1,
+                name: "Quantum X Pro Smartphone",
+                price: 899.99,
+                image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+                quantity: 1
+            },
+            {
+                id: 3,
+                name: "Zenith Noise-Canceling Headphones",
+                price: 299.99,
+                image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+                quantity: 1
+            },
+            {
+                id: 6,
+                name: "Quantum Sound Bluetooth Speaker",
+                price: 199.99,
+                image: "https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+                quantity: 1
+            }
+        ];
+
+        // DOM Elements
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        const cartBtn = document.getElementById('cart-btn');
+        const cartModal = document.getElementById('cart-modal');
+        const closeCart = document.getElementById('close-cart');
+        const overlay = document.getElementById('overlay');
+        const productsGrid = document.getElementById('products-grid');
+        const cartItemsContainer = document.querySelector('.cart-items');
+        const cartTotalPrice = document.getElementById('cart-total-price');
+        const newsletterForm = document.getElementById('newsletter-form');
+
+        // Mobile menu toggle
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Cart modal toggle
+        cartBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            cartModal.classList.add('open');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeCart.addEventListener('click', () => {
+            cartModal.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        overlay.addEventListener('click', () => {
+            cartModal.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Render products
+        function renderProducts() {
+            productsGrid.innerHTML = '';
+            
+            products.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                
+                const ratingStars = '★'.repeat(Math.floor(product.rating)) + '☆'.repeat(5 - Math.floor(product.rating));
+                
+                let badgeHTML = '';
+                if (product.badge) {
+                    const badgeClass = product.badge === 'Hot' ? 'hot' : '';
+                    badgeHTML = `<div class="product-badge ${badgeClass}">${product.badge}</div>`;
+                }
+                
+                productCard.innerHTML = `
+                    ${badgeHTML}
+                    <div class="product-img">
+                        <img src="${product.image}" alt="${product.name}">
+                    </div>
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <div class="product-description">${product.description}</div>
+                        <div class="product-rating">
+                            ${ratingStars} <span>${product.rating} (${product.reviews})</span>
+                        </div>
+                        <div class="product-price">
+                            $${product.price.toFixed(2)}
+                            <span>$${product.originalPrice.toFixed(2)}</span>
+                        </div>
+                        <button class="btn add-to-cart" data-id="${product.id}">Add to Cart</button>
+                    </div>
+                `;
+                
+                productsGrid.appendChild(productCard);
+            });
+            
+            // Add event listeners to "Add to Cart" buttons
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = parseInt(this.getAttribute('data-id'));
+                    addToCart(productId);
+                });
+            });
+        }
+
+        // Render cart items
+        function renderCartItems() {
+            cartItemsContainer.innerHTML = '';
+            
+            cartItems.forEach(item => {
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item';
+                
+                cartItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}" class="cart-item-img">
+                    <div class="cart-item-info">
+                        <h4>${item.name}</h4>
+                        <div class="cart-item-price">$${item.price.toFixed(2)} x ${item.quantity}</div>
+                        <button class="cart-item-remove" data-id="${item.id}">Remove</button>
+                    </div>
+                `;
+                
+                cartItemsContainer.appendChild(cartItem);
+            });
+            
+            // Calculate total
+            const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            cartTotalPrice.textContent = `$${total.toFixed(2)}`;
+            
+            // Update cart count
+            const cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+            document.querySelector('.cart-count').textContent = cartCount;
+            document.querySelector('.cart-header h3').textContent = `Your Cart (${cartCount})`;
+            
+            // Add event listeners to remove buttons
+            document.querySelectorAll('.cart-item-remove').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = parseInt(this.getAttribute('data-id'));
+                    removeFromCart(productId);
+                });
+            });
+        }
+
+        // Add product to cart
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            const existingItem = cartItems.find(item => item.id === productId);
+            
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cartItems.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    image: product.image,
+                    quantity: 1
+                });
+            }
+            
+            renderCartItems();
+            
+            // Show a quick confirmation
+            const btn = document.querySelector(`.add-to-cart[data-id="${productId}"]`);
+            const originalText = btn.textContent;
+            btn.textContent = 'Added!';
+            btn.style.backgroundColor = 'var(--secondary)';
+            
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.backgroundColor = '';
+            }, 1500);
+        }
+
+        // Remove product from cart
+        function removeFromCart(productId) {
+            const itemIndex = cartItems.findIndex(item => item.id === productId);
+            
+            if (itemIndex !== -1) {
+                cartItems.splice(itemIndex, 1);
+                renderCartItems();
+            }
+        }
+
+        // Newsletter form submission
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            
+            // In a real implementation, you would send this to a server
+            // Show success message
+            const submitBtn = this.querySelector('.btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Subscribed!';
+            submitBtn.style.backgroundColor = 'var(--secondary)';
+            
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.style.backgroundColor = '';
+                this.reset();
+            }, 2000);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') return;
+                
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
+            renderCartItems();
+            
+            // Add hover effect to product cards
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            
+            // Add glow effect to category cards on hover
+            const categoryCards = document.querySelectorAll('.category-card');
+            categoryCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.2), 0 0 20px rgba(37, 99, 235, 0.3)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = 'var(--shadow)';
+                });
+            });
+        });
+
+        // Handle window resize for responsive behavior
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+    </script>
+</body>
+</html>
