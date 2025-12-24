@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="assest\css\index.css">
+        <title>Our Services | eLife - Beyond the Product</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                document.addEventListener('scroll', () => {
+                    let navBar = document.querySelector('nav');
+                    if (window.scrollY > 0) {
+                        navBar.style.background = 'white';
+                        navBar.style.boxShadow = '0 5px 20px rgba(190, 190, 190, 0.15)'
+                    }
+                    else {
+                        navBar.style.background = 'transparent';
+                        navBar.style.boxShadow = 'none'
+                    }
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <!-- NAVIGATION (Desktop only - no mobile toggle) -->
+        <nav>
+            <div id="navbar">
+                <div id="navbar-logo">
+                    <img src="assest\Image\homepage\eLife.png" width="140" height="70">
+                </div>
+                <div id="navbar-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="service.html" style="font-weight: 600; color: #0066cc;">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                    <button class="blue-button" onclick="location.href='product.html'">Shop Now</button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- SERVICES HERO SECTION -->
+        <div id="home-top-container">
+            <div id="home-top-wrapper">
+                <div id="home-top-text">
+                    <h1>Beyond the Product</h1>
+                    <p>
+                        At eLife, we believe your experience doesn't end at checkout. That's why we've built a comprehensive ecosystem of premium services designed to protect your investment, enhance your setup, and support you every step of the way.
+                        <br><br>
+                        From personalized setup to peace-of-mind protection plans, discover how we deliver more value and a seamless technology experience.
+                    </p>
+                    <button class="blue-button" onclick="location.href='#service-cards'">Explore Services</button>
+                </div>
+                <div id="home-top-image">
+                    <!-- Placeholder for a services hero image -->
+                    <div style="background: #d0e4ff; border-radius:20px; display:flex; align-items:center; justify-content:center; font-size:1.2rem; color:#00aa44;">
+                        <img src="assest\Image\service-tecnication.avif" alt="" style="border-radius: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICES SHOWCASE -->
+        <div id="collection-container">
+            <h1>Our Service Categories</h1>
+            <div id="collection-items-wrapper">
+                <!-- Service 1: Protection -->
+                <div class="collection-item" style="cursor:pointer;" onclick="location.href='#protection-plan'">
+                    <div class="collection-icon" style="background: #fff0f5;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#cc0066" viewBox="0 0 16 16">
+                          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                    </div>
+                    <span class="collection-name">
+                        Protection Plans
+                    </span>
+                </div>
+                <!-- Service 2: Setup -->
+                <div class="collection-item" style="cursor:pointer;" onclick="location.href='#setup-delivery'">
+                    <div class="collection-icon" style="background: #f0f8ff;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#0066cc" viewBox="0 0 16 16">
+                          <path d="M8.5 5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.793z"/>
+                          <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                        </svg>
+                    </div>
+                    <span class="collection-name">
+                        Setup & Delivery
+                    </span>
+                </div>
+                <!-- Service 3: Support -->
+                <div class="collection-item" style="cursor:pointer;" onclick="location.href='#tech-support'">
+                    <div class="collection-icon" style="background: #fff8f0;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#cc6600" viewBox="0 0 16 16">
+                          <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1"/>
+                          <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+                        </svg>
+                    </div>
+                    <span class="collection-name">
+                        Tech Support
+                    </span>
+                </div>
+                <!-- Service 4: Trade-In -->
+                <div class="collection-item" style="cursor:pointer;" onclick="location.href='#trade-in'">
+                    <div class="collection-icon" style="background: #f0fff8;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#00aa66" viewBox="0 0 16 16">
+                          <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm4 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                          <path d="M8 4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M13 7.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                        </svg>
+                    </div>
+                    <span class="collection-name">
+                        Trade-In
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DETAILED SERVICE CARDS -->
+        <div class="product-section-container" id="service-cards">
+            <h1>Premium Service Details</h1>
+            <span class="product-section-description">
+                Select a service to learn more about coverage, benefits, and how to enroll.
+            </span>
+            <ul class="product-section-items-wrapper">
+                <!-- Service Card 1: Protection Plan -->
+                <li class="product-item" id="protection-plan" style="border: none; box-shadow: 0 10px 30px rgba(0,102,204,0.1);">
+                    <div class="product-image" style="background: #fff0f5; padding: 25px;">
+                        <h3 style="color:#cc0066; margin:0;">🛡️</h3>
+                    </div>
+                    <div class="product-text">
+                        <span class="product-title" style="font-size:1.5rem;">
+                            eLife Shield Protection Plan
+                        </span>
+                        <p style="color:#666; margin:15px 0; line-height:1.7;">
+                            Extend your warranty and protect your purchase from unexpected accidents.
+                            <br>• Accidental damage (drops, spills, cracks)
+                            <br>• Mechanical & electrical failures
+                            <br>• Battery replacement (after 500 cycles)
+                            <br>• 24/7 priority support
+                        </p>
+                        <div class="product-purchase">
+                            <span class="product-price" style="font-size:1.2rem; color:#00aa44;">
+                                From $49.99 / year
+                            </span>
+                            <button class="blue-button" onclick="alert('Protection Plan enrollment would open here.')">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <!-- Service Card 2: Setup & Delivery -->
+                <li class="product-item" id="setup-delivery" style="border: none; box-shadow: 0 10px 30px rgba(0,102,204,0.1); margin-top: 40px;">
+                    <div class="product-image" style="background: #f0f8ff; padding: 25px;">
+                        <h3 style="color:#0066cc; margin:0;">🚚</h3>
+                    </div>
+                    <div class="product-text">
+                        <span class="product-title" style="font-size:1.5rem;">
+                            Express Delivery & Personalized Setup
+                        </span>
+                        <p style="color:#666; margin:15px 0; line-height:1.7;">
+                            Get your new device delivered, unboxed, and ready to use.
+                            <br>• Same-day/next-day delivery
+                            <br>• In-home unboxing and inspection
+                            <br>• Data transfer from old device
+                            <br>• App installation & configuration
+                            <br>• Basic tutorial on key features
+                        </p>
+                        <div class="product-purchase">
+                            <span class="product-price" style="font-size:1.2rem; color:#00aa44;">
+                                $29.99 (with purchase)
+                            </span>
+                            <button class="blue-button" onclick="alert('Service scheduling would open here.')">
+                                Schedule Setup
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <!-- Service Card 3: Tech Support -->
+                <li class="product-item" id="tech-support" style="border: none; box-shadow: 0 10px 30px rgba(0,102,204,0.1); margin-top: 40px;">
+                    <div class="product-image" style="background: #fff8f0; padding: 25px;">
+                        <h3 style="color:#cc6600; margin:0;">🔧</h3>
+                    </div>
+                    <div class="product-text">
+                        <span class="product-title" style="font-size:1.5rem;">
+                            Pro Tech Support & Troubleshooting
+                        </span>
+                        <p style="color:#666; margin:15px 0; line-height:1.7;">
+                            Get expert help when you need it.
+                            <br>• 24/7 Live chat & phone support
+                            <br>• Remote desktop assistance
+                            <br>• In-store diagnostics & repair
+                            <br>• Software optimization
+                            <br>• Data recovery services
+                        </p>
+                        <div class="product-purchase">
+                            <span class="product-price" style="font-size:1.2rem; color:#00aa44;">
+                                Free for 1 year
+                            </span>
+                            <button class="blue-button" onclick="location.href='tel:+123456789'">
+                                Call Support
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <!-- Service Card 4: Trade-In -->
+                <li class="product-item" id="trade-in" style="border: none; box-shadow: 0 10px 30px rgba(0,102,204,0.1); margin-top: 40px;">
+                    <div class="product-image" style="background: #f0fff8; padding: 25px;">
+                        <h3 style="color:#00aa66; margin:0;">♻️</h3>
+                    </div>
+                    <div class="product-text">
+                        <span class="product-title" style="font-size:1.5rem;">
+                            Device Trade-In & Eco Recycling
+                        </span>
+                        <p style="color:#666; margin:15px 0; line-height:1.7;">
+                            Upgrade responsibly and get value from old devices.
+                            <br>• Instant online quote
+                            <br>• Free shipping label
+                            <br>• Secure data wiping
+                            <br>• Store credit or payment
+                            <br>• Environmentally responsible recycling
+                        </p>
+                        <div class="product-purchase">
+                            <span class="product-price" style="font-size:1.2rem; color:#00aa44;">
+                                Get a Free Quote
+                            </span>
+                            <button class="blue-button" onclick="alert('Trade-in estimator would open here.')">
+                                Value Your Device
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- SERVICE PROMO SECTION -->
+        <div class="promo-container">
+            <div class="promo-box">
+                <div class="promo-image">
+                    <div style="width:100%; height:400px; background:#e6f7ff; border-radius:15px;">
+                        <img src="assest\Image\Bundle-Save-1.png" alt="" style="margin-top: 50px; margin-left: 20px;">
+                    </div>
+                </div>
+                <div class="promo-content">
+                    <h1>Bundle & Save</h1>
+                    <h2>The Complete eLife Experience</h2>
+                    <p>
+                        Purchase any device with Shield Protection and Express Setup to unlock the Complete Care Bundle. Get 20% discount, priority support, and a free premium accessory.
+                    </p>
+                    <div>
+                        <button class="white-button" onclick="location.href='product.html'">
+                            Shop Devices
+                        </button>
+                        <button class="blue-button" style="margin-left: 15px;" onclick="alert('Bundle offer details would open here.')">
+                            View Bundle Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer-top">
+            <img src="assest\Image\homepage\eLife.png" alt="eLife Logo" width="220px" height="110px">
+            <div id="footer-socials-wrapper">
+                <div class="footer-social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg>
+                    <span>012 345 6789</span>
+                </div>
+                <div class="footer-social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+                    </svg>
+                    <span>Telegram</span>
+                </div>
+                <div class="footer-social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                    </svg>
+                    <span>Twitter</span>
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <p>Copyright © 2024 eLife. All rights reserved.</p>
+        </div>
+    </footer>
+</html>
