@@ -1,0 +1,74 @@
+ /* RESPONSIVE */
+    @media (max-width: 900px) {
+      #hero .section-inner,
+      #about .section-inner,
+      #skills .section-inner,
+      #contact .section-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-right {
+        order: -1;
+      }
+
+      header {
+        padding-inline: 4vw;
+      }
+
+      /* show hamburger, hide menu initially */
+      .menu-toggle {
+        display: flex;
+      }
+
+      nav {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: rgba(15,23,42,0.98);
+        border-bottom: 1px solid rgba(148,163,184,0.35);
+        transform: translateY(-120%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.25s ease, opacity 0.25s ease;
+        justify-content: center;
+      }
+
+      nav.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 6vw 16px;
+        font-size: 0.9rem;
+      }
+
+      section {
+        padding-inline: 6vw;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .stack-card {
+        width: 300px;
+        height: 300px;
+        justify-content: center;
+        place-items: center;
+      }
+
+      .stack-item {
+        width: 260px;
+      }
+
+      .stack-item img {
+        width: 86%;
+      }
+
+      .hero-title {
+        font-size: 2.1rem;
+      }
+    }
