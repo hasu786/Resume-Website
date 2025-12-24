@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>My Tech Stack Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assest\css\style.css">
+  <link rel="stylesheet" href="assest\css\responsive.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <header>
+    <div class="logo">HM</div>
+
+    <nav>
+      <ul>
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="section-inner">
+        <div class="reveal">
+          <p class="section-title">Welcome</p>
+          <h1 class="hero-title">
+            Learning the full <span class="hero-gradient">web & data</span> stack.
+          </h1>
+          <p class="hero-sub">
+            This portfolio shows projects built while learning HTML, CSS, JavaScript, Python, SQL, and Tableau — from
+            simple web pages to data dashboards.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn">View projects <span>↗</span></a>
+            <a href="#contact" class="btn btn-outline">Contact me</a>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="stack-card">
+            <div class="stack-pill"></div>
+            <div class="stack-grid">
+              <div class="stack-item">
+                <img src="assest\image\home.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-inner">
+        <div class="reveal">
+          <p class="section-title">About me</p>
+          <h2 class="section-heading">From curiosity to code and data.</h2>
+          <p class="section-caption">
+            I’m a web developer learning modern frontend technologies and building responsive, interactive web applications. I’m looking to work on real-world projects where I can grow my skills and contribute to meaningful products.
+          </p>
+          <p class="about-text">
+            I'm a learner who is building a foundation in web development and data analytics. Over time, I have picked
+            up HTML, CSS, and JavaScript to create interactive web pages, and I am also exploring Python, SQL, and
+            Tableau to work with data, answer questions, and build dashboards that tell a story. My goal is to combine
+            these skills to build real projects that are useful and easy to understand.
+          </p>
+          <p class="about-text">
+            Right now, the focus is on practicing consistently and improving step by step — turning tutorials into
+            personal projects, experimenting with ideas, and sharing the progress through this portfolio.
+          </p>
+        </div>
+
+        <div class="about-card reveal">
+          <strong style="font-weight:600;">What I enjoy working on</strong>
+          <div class="about-badges">
+            <span class="about-badge">Clean, simple UI</span>
+            <span class="about-badge">Small web apps</span>
+            <span class="about-badge">Data cleaning</span>
+            <span class="about-badge">SQL questions</span>
+            <span class="about-badge">Visual dashboards</span>
+          </div>
+          <p class="about-text" style="margin-top:10px;">
+            This portfolio will grow as new projects are finished. More real examples will be added for each language
+            and tool — especially end‑to‑end projects that go from raw data to a finished Tableau dashboard.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-inner">
+        <div class="reveal">
+          <p class="section-title">Skills</p>
+          <h2 class="section-heading">What each tool is used for.</h2>
+          <p class="section-caption">
+            Each language or tool has a different purpose, so the projects below match that purpose (web pages, logic,
+            data analysis, and dashboards).
+          </p>
+
+          <div class="skills-list">
+            <div class="skill-row">
+              <div class="skill-label">
+                <span>HTML</span>
+                <span class="skill-purpose">Structure of every web page.</span>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-fill" data-skill="0.85"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-label">
+                <span>CSS</span>
+                <span class="skill-purpose">Layout, colors, and responsive design.</span>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-fill" data-skill="0.8"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-label">
+                <span>JavaScript</span>
+                <span class="skill-purpose">Interactivity and browser logic.</span>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-fill" data-skill="0.75"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-label">
+                <span>Python</span>
+                <span class="skill-purpose">Scripting, data cleaning, & analysis.</span>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-fill" data-skill="0.7"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-label">
+                <span>SQL</span>
+                <span class="skill-purpose">Getting data out of databases.</span>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-fill" data-skill="0.7"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-label">
+                <span>Tableau</span>
+                <span class="skill-purpose">Dashboards & data stories.</span>
+              </div>
+              <div class="skill-meter">
+                <div class="skill-fill" data-skill="0.65"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="learning-notes reveal">
+          <strong style="font-weight:600;">Learning notes</strong><br />
+          This portfolio is still growing. As new projects are built in each language, they can be added or replaced
+          with stronger real‑world examples like complete SQL + Tableau data analysis projects.
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-inner">
+        <div class="reveal">
+          <p class="section-title">Projects</p>
+          <h2 class="section-heading">Projects grouped by language purpose.</h2>
+          <p class="section-caption">
+            Each project highlights what the language or tool is best at: structure (HTML), style (CSS), interaction
+            (JS), logic (Python), queries (SQL), and visual insights (Tableau).
+          </p>
+        </div>
+
+        <div class="project-tabs reveal">
+          <button class="tab-btn active" data-filter="all">All</button>
+          <button class="tab-btn" data-filter="html-css-js">HTML • CSS • JS</button>
+          <button class="tab-btn" data-filter="python-sql">Python • SQL</button>
+          <button class="tab-btn" data-filter="tableau">Tableau</button>
+        </div>
+
+        <div class="projects-grid" id="projectGrid">
+          <a href="Ecommerce website 2">
+            <article class="project-card reveal" data-category="html-css-js">
+              <div class="project-tag-row">
+                <span class="project-type">E-Commerce Website</span>
+                <span class="project-pill">HTML • CSS • JS</span>
+              </div>
+              <h3 class="project-title">eLife Electronics Website</h3>
+              <p class="project-desc">
+                A responsive electronics e-commerce website showcasing modern UI design, interactive components, and
+                clean front-end architecture. Built for portfolio demonstration and real-world e-commerce flow
+                simulation.
+              </p>
+              <div class="project-tech">
+                <span class="project-chip-tech">HTML sections</span>
+                <span class="project-chip-tech">Flexbox & Grid</span>
+                <span class="project-chip-tech">Scroll events</span>
+              </div>
+            </article>
+          </a>
+
+          <a href="Landing page for e commerce">
+            <article class="project-card reveal" data-category="html-css-js">
+              <div class="project-tag-row">
+                <span class="project-type">Landing Page</span>
+                <span class="project-pill">HTML • CSS</span>
+              </div>
+              <h3 class="project-title">Product Landing Page</h3>
+              <p class="project-desc">
+                A visually engaging landing page for an electronics eCommerce website, designed to guide users from
+                product discovery to action. The page emphasizes clear hierarchy, smooth scrolling, responsive layouts,
+                conversion-focused design.
+              </p>
+              <div class="project-tech">
+                <span class="project-chip-tech">Responsive layout</span>
+                <span class="project-chip-tech">Buttons & cards</span>
+                <span class="project-chip-tech">Mobile menu</span>
+              </div>
+            </article>
+          </a>
+
+          <a href="Task Management Web App">
+            <article class="project-card reveal" data-category="html-css-js">
+              <div class="project-tag-row">
+                <span class="project-type">Small Web App</span>
+                <span class="project-pill">JavaScript</span>
+              </div>
+              <h3 class="project-title">Task Management</h3>
+              <p class="project-desc">
+               This task management web app is a front-end focused project built to practice real-world application workflows. It includes task creation, editing, completion tracking, filtering, and responsive layouts, modern HTML, CSS, JavaScript.
+              </p>
+              <div class="project-tech">
+                <span class="project-chip-tech">DOM manipulation</span>
+                <span class="project-chip-tech">Events</span>
+                <span class="project-chip-tech">localStorage</span>
+              </div>
+            </article>
+          </a>
+
+          <article class="project-card reveal" data-category="python-sql">
+            <div class="project-tag-row">
+              <span class="project-type">Python Script</span>
+              <span class="project-pill">Python</span>
+            </div>
+            <h3 class="project-title">Data Cleaning Script</h3>
+            <p class="project-desc">
+              A Python script that reads a CSV file, cleans missing values, and calculates simple statistics ready for
+              visualization.
+            </p>
+            <div class="project-tech">
+              <span class="project-chip-tech">pandas basics</span>
+              <span class="project-chip-tech">CSV handling</span>
+              <span class="project-chip-tech">Summary metrics</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="python-sql">
+            <div class="project-tag-row">
+              <span class="project-type">SQL Analysis</span>
+              <span class="project-pill">SQL</span>
+            </div>
+            <h3 class="project-title">Sales Database Queries</h3>
+            <p class="project-desc">
+              A set of SQL queries that answer business questions such as top customers, monthly revenue, and
+              best‑selling products.
+            </p>
+            <div class="project-tech">
+              <span class="project-chip-tech">JOINs</span>
+              <span class="project-chip-tech">GROUP BY</span>
+              <span class="project-chip-tech">Window functions</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="python-sql tableau">
+            <div class="project-tag-row">
+              <span class="project-type">End‑to‑End Data Project</span>
+              <span class="project-pill">Python • SQL • Tableau</span>
+            </div>
+            <h3 class="project-title">Customer Churn Dashboards</h3>
+            <p class="project-desc">
+              A small data project: SQL pulls data, Python cleans and prepares it, and Tableau shows churn rates and
+              segments in an interactive dashboard.
+            </p>
+            <div class="project-tech">
+              <span class="project-chip-tech">SQL queries</span>
+              <span class="project-chip-tech">Python preprocessing</span>
+              <span class="project-chip-tech">Tableau dashboard</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="tableau">
+            <div class="project-tag-row">
+              <span class="project-type">Data Visualization</span>
+              <span class="project-pill">Tableau</span>
+            </div>
+            <h3 class="project-title">Interactive KPI Dashboard</h3>
+            <p class="project-desc">
+              A Tableau Public dashboard with filters and drill‑downs showing key metrics like revenue, category
+              performance, and trends over time.
+            </p>
+            <div class="project-tech">
+              <span class="project-chip-tech">Calculated fields</span>
+              <span class="project-chip-tech">Filters</span>
+              <span class="project-chip-tech">Published online</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-inner">
+        <div class="reveal">
+          <p class="section-title">Contact</p>
+          <h2 class="section-heading">Let’s talk about projects.</h2>
+          <p class="contact-sub">
+            This site is a learning portfolio. If you have feedback, opportunities, or ideas for projects using web
+            development or data tools, feel free to reach out.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:hassanmaredia47@gmail.com" class="contact-pill">
+              <span>✉️</span><span>Email</span>
+            </a>
+            <a href="https://github.com/hasu786" target="_blank" class="contact-pill">
+              <span>💻</span><span>GitHub</span>
+            </a>
+            <a href="https://public.tableau.com/" target="_blank" class="contact-pill">
+              <span>📊</span><span>Tableau Public</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card reveal">
+          <p class="contact-label">Primary email</p>
+          <div class="contact-line">
+            <span>hassanmaredia47@gmail.com</span>
+            <span class="contact-status">Learning & open to work</span>
+          </div>
+          <p class="contact-note">
+            You can also link GitHub repos (for HTML/CSS/JS, Python, SQL) and Tableau Public dashboards from the project
+            cards when they are ready.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Hassan Maredia • Built while learning HTML, CSS, JS, Python, SQL & Tableau.
+  </footer>
+
+  <script>
+    // year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // active nav link on scroll
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    function setActiveLink() {
+      let current = "";
+      const top = window.scrollY;
+      sections.forEach(sec => {
+        const offset = sec.offsetTop - 160;
+        const height = sec.offsetHeight;
+        if (top >= offset && top < offset + height) {
+          current = sec.id;
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    }
+    window.addEventListener("scroll", setActiveLink);
+
+    // reveal on scroll
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    reveals.forEach(el => observer.observe(el));
+
+    // skill bars
+    const fills = document.querySelectorAll(".skill-fill");
+    const skillObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const val = parseFloat(el.dataset.skill || "0.7");
+          el.style.transform = "scaleX(" + val + ")";
+          skillObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    fills.forEach(el => skillObserver.observe(el));
+
+    // project tabs
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const projectCards = document.querySelectorAll(".project-card");
+    tabButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        tabButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        const filter = btn.dataset.filter;
+        projectCards.forEach(card => {
+          if (filter === "all") {
+            card.style.display = "";
+          } else {
+            const cat = card.getAttribute("data-category") || "";
+            card.style.display = cat.includes(filter) ? "" : "none";
+          }
+        });
+      });
+    });
+
+    // navbar toggle
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("header nav");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("open");
+      menuToggle.classList.toggle("open", isOpen);
+      menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+
+    // close menu on nav link click (mobile)
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        if (nav.classList.contains("open")) {
+          nav.classList.remove("open");
+          menuToggle.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
